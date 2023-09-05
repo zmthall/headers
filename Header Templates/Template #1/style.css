@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500&family=Quicksand:wght@600;700&display=swap');
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    /* font-family: 'Lora', serif; */
+    font-family: 'Quicksand', sans-serif;
+    color: rgba(0, 0, 0, 0.8);
+    height: 500vh;
+}
+
+:root {
+    /* Color related variables */
+    --main-color-dark-blue: #0C134F;
+    --main-color-blue: #1D267D;
+    --accent-color-dark-purple: #5C469C;
+    --accent-color-purple: #D4ADFC;
+    --grey-back-accent: hsla(234, 0%, 90%, 1);
+    --grey-shadow-accent: hsla(0, 0, 0, 0.2);
+
+    /* Size related variables */
+    --top-nav-height: 3rem;
+    --main-nav-height: 4rem;
+}
+
+.top-nav {
+    background-color: var(--grey-back-accent);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1.5rem;
+    height: var(--top-nav-height);
+}
+
+.top-nav a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.top-nav a:hover {
+    color: hsla(0, 0%, 0%, 0.5);
+}
+
+.top-nav-social,
+.social-links {
+    height: 100%;
+}
+
+.social-links a {
+    display: block;
+    height: 60%;
+}
+
+.social-links {
+    display: flex;
+    align-items: center;
+}
+
+.top-nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+.top-nav ul:last-child {
+    gap: 10px;
+    margin-right: 1.5rem;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: var(--main-nav-height);
+    padding: 0 1.5rem;
+}
+
+.main-nav-links {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+}
+
+.logo-image a {
+    display: block;
+}
+
+.mobile-nav {
+    display: none;
+}
+
